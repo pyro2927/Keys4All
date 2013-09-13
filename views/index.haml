@@ -1,0 +1,7 @@
+!!!
+%html
+  %body
+    %p
+      = "Name: " + current_user.name
+    - current_user.services.each do |service|
+      = service.servicename + ": " + service.username
